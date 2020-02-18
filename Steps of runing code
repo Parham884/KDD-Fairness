@@ -1,0 +1,38 @@
+1 - Train your network using "MODE = train"  --> the trained model will be sved in Checkpoint
+
+2 - Test your network using "MODE = test" and runing main.py
+* The following csv files are generated:
+**Eval.csv (contain AUC on validation set and thereshold based on maximizing f1 score on validation set)
+**TestEval.csv (contain AUC on test set )  --> drop thereshod here, it is not meaningfull
+
+3 - Rename TestEval.csv to Evel*.csv, where * is the number of run (e.g Evel1.csv for run1).
+
+4 - Select "MODE = "plot"" and run main.py
+* The following are the outputs:
+** The plots of the TPR disparities for 1 model only
+** Run1_Age.csv, Run1_race.csv,Run1_insturance.csv,Run1_sex.csv. If it is not your model1,rename files properly (e.g Run2_Age.csv, for run2).
+( These files contain diseases labels,%of patient per subgroup, and the associated gap per label/subgroup. They will be used combined with 4 other run to calculate disparities considering the confidence intervals(CI).)
+*** In "Run1_race.csv" disease Px, PO, Co, LL, EC have )% American. You should shoift the values on the GAP column from top to down properly sho that the disease with 0% paetients have no GAP reported. This shifting adjust the values correctly.
+*** In "Run1_Age.csv" disease PO )% 0-20. You should shift the values on the GAP column from top to down properly sho that the disease with 0% paetients have no GAP reported. This shifting adjust the values correctly.
+
+5 -  Run the coel "false_pos.py" to calculate the false positive rate on "No_Finding" labels, per subgroup and per intersection of different attribiutes. 
+* rename all files properly (e.g. FP_race.csv to . FP*_race.csv, where * is 1 for run 1, etc. ) to show thay are the resuls of which run. This is mandatory later as the code of claculating the CI of this results will need them. 
+** For Insurance race, there is no Native patient with medicaid insurance. Remove the number.
+
+6 - rename the results forlder followed by the applied random seed for the checkpoint. (e.g. for random seed 31 use results31)
+
+Do the step 2 to 6 for all 5 runs per dataset.
+
+7 - create a folder and call it "results" to save the results of correlation.py and confidence.py 
+--------------------------------
+8 - In Confidence.ipynb part Subgroup-specific underdiagnosis rate, get the mean and CI of each attribiute, **then write them in the section  
+      FPR confidence intervals in Confidence.py code and then plot the figure 3 of the paper**.
+
+9 - The Confidence.ipynb also gave the results of Table 1 (Percentages of each subgroup), AUC of table 2, Values of the Figure 2 which should be copied in  Confidence.py code to be plotted as fig. 2,  Values of Table 5 
+
+10 - Confidence.py : plot the disparity figures of the 5 run including the CI using the csv file generated for each attribiute oer run
+
+11 - CorrelationCoefficients.ipynb: Calculate the  correlation coefficients of TPR sidparities and patient propotion per disease. It consider the Bonferroni correction significance level.
+
+10 - SummaryTable.ipynb generate the values in summary table, which is table 3 in the paper 
+

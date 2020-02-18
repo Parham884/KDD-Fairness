@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -p gpu
+#SBATCH --gres=gpu:1
+#SBATCH -c 12
+#SBATCH --mem=20G
+#SBATCH --job-name=laleh_job
+#SBATCH --output=laleh_%j.log
+#SBATCH --time=240:00:00
+
+date;hostname;pwd
+cd /h/laleh/PycharmProjects/Fairness/Aug5/CXP/72
+export PATH=/pkgs/anaconda3/bin:$PATH
+source activate /h/laleh/anaconda3/envs/f1
+export XDG_RUNTIME_DIR=""
+python main.py
+
+

@@ -1,0 +1,45 @@
+Mon Dec  9 14:33:43 EST 2019
+guppy7
+/h/laleh/PycharmProjects/Fairness/Nov28/MIMIC/2
+Validation_df size: 37300
+Train_df size 298137
+Test_df size 36421
+Test _df size : 36421
+0
+6400
+12800
+19200
+25600
+32000
+column Airspace Opacity : [0.22385003]
+column Atelectasis : [0.28105304]
+column Cardiomegaly : [0.24807681]
+column Consolidation : [0.12685604]
+column Edema : [0.20778586]
+column Enlarged Cardiomediastinum : [0.09547891]
+column Fracture : [0.0633553]
+column Lung Lesion : [0.1203775]
+column No Finding : [0.38272619]
+column Pleural Effusion : [0.4097282]
+column Pleural Other : [0.1229581]
+column Pneumonia : [0.14105242]
+column Pneumothorax : [0.21491815]
+column Support Devices : [0.32937053]
+Accuracy of Airspace Opacity 0.7496224705527031
+Accuracy of Atelectasis 0.7974245627522583
+Accuracy of Cardiomegaly 0.7808132670711951
+Accuracy of Consolidation 0.930864061942286
+Accuracy of Edema 0.9026660443150929
+Accuracy of Enlarged Cardiomediastinum 0.9190851431866232
+Accuracy of Fracture 0.9569753713516927
+Accuracy of Lung Lesion 0.9433293978748524
+Accuracy of No Finding 0.7949809176024821
+Accuracy of Pleural Effusion 0.8863293155047912
+Accuracy of Pleural Other 0.9887427582987837
+Accuracy of Pneumonia 0.8845995442189946
+Accuracy of Pneumothorax 0.9595562999368497
+Accuracy of Support Devices 0.8888278740287197
+Accuracy ave: 0.8845583591883803
+AUC ave: 0.8351803395557237
+AUPRC ave: 0.3969775946934778
+done

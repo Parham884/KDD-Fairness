@@ -1,0 +1,87 @@
+Wed Nov 27 05:10:18 EST 2019
+guppy13
+/h/laleh/Desktop/PycharmProjects/Fairness/Nov28/CXP/23
+  0%|          | 0/65 [00:00<?, ?it/s]Validation_df size: 23022
+Train_df size 178352
+Test_df size 22274
+Index(['subject_id', 'Path', 'Sex', 'Age', 'Frontal/Lateral', 'AP/PA',
+       'No Finding', 'Enlarged Cardiomediastinum', 'Cardiomegaly',
+       'Lung Opacity', 'Lung Lesion', 'Edema', 'Consolidation', 'Pneumonia',
+       'Atelectasis', 'Pneumothorax', 'Pleural Effusion', 'Pleural Other',
+       'Fracture', 'Support Devices'],
+      dtype='object')
+Validation_df path 23022
+Train_df path 178352
+Epoch 0/64
+----------
+0
+24000
+48000
+72000
+96000
+120000
+144000
+168000
+Train_losses: [0.2953255772590637]
+  2%|▏         | 1/65 [1:28:41<94:36:33, 5321.77s/it]0
+Validation_losses: [0.28195181488990784]
+saving
+Epoch 1/64
+----------
+0
+24000
+48000
+72000
+96000
+120000
+144000
+168000
+Train_losses: [0.2953255772590637, 0.27494800090789795]
+  3%|▎         | 2/65 [2:32:11<85:11:39, 4868.25s/it]0
+Validation_losses: [0.28195181488990784, 0.27405059337615967]
+saving
+Epoch 2/64
+----------
+0
+24000
+48000
+72000
+96000
+120000
+144000
+168000
+Train_losses: [0.2953255772590637, 0.27494800090789795, 0.26877260208129883]
+  5%|▍         | 3/65 [3:35:09<78:12:35, 4541.22s/it]0
+Validation_losses: [0.28195181488990784, 0.27405059337615967, 0.2700560986995697]
+saving
+Epoch 3/64
+----------
+0
+24000
+48000
+72000
+96000
+120000
+144000
+168000
+Train_losses: [0.2953255772590637, 0.27494800090789795, 0.26877260208129883, 0.2645982801914215]
+  6%|▌         | 4/65 [4:38:22<73:08:36, 4316.66s/it]0
+Validation_losses: [0.28195181488990784, 0.27405059337615967, 0.2700560986995697, 0.26992133259773254]
+saving
+Epoch 4/64
+----------
+0
+24000
+48000
+72000
+96000
+120000
+144000
+168000
+Train_losses: [0.2953255772590637, 0.27494800090789795, 0.26877260208129883, 0.2645982801914215, 0.26078811287879944]
+  8%|▊         | 5/65 [5:44:10<70:05:55, 4205.92s/it]0
+Validation_losses: [0.28195181488990784, 0.27405059337615967, 0.2700560986995697, 0.26992133259773254, 0.26861366629600525]
+saving
+Epoch 5/64
+----------
+slurmstepd: error: *** JOB 244891 ON guppy13 CANCELLED AT 2019-11-27T11:50:19 ***
